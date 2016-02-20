@@ -43,7 +43,7 @@ angular.module('projectApp')
 		function buildSource() {
 			var list = [];
 			$scope.subSource;
-			list.push('<ul>')
+			list.push('<ul class="color-bar">')
 			$rootScope.colorBar.forEach(function(bar, index) {
 				list.push('<li style="background-color:' + bar.color + ';width:' + bar.width + '%">');
 				list.push('</li>');
@@ -85,7 +85,7 @@ angular.module('projectApp')
 
 				$rootScope.colorBar.push({
 					color: hex,
-					width: width.toFixed(3)
+					width: width
 				});
 			});
 			cb();

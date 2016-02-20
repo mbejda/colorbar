@@ -18,7 +18,8 @@ angular
     'ngTouch',
     'ngDroplet',
     'ui.bootstrap',
-    'ui.codemirror'
+    'ui.codemirror',
+    'djds4rce.angular-socialshare'
   ])
   .config(function($routeProvider) {
 

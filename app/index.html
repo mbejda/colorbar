@@ -11,14 +11,17 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/highlightjs/styles/default.css" />
     <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css" />
+    <link rel="stylesheet" href="bower_components/angular-socialshare/angular-socialshare.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-<link rel="stylesheet" type="text/css" href="http://codemirror.net/lib/codemirror.css"/>
-<link rel="stylesheet" type="text/css" href="http://codemirror.net/theme/twilight.css"/>
+<link rel="stylesheet" type="text/css" href="https://codemirror.net/lib/codemirror.css"/>
+<link rel="stylesheet" type="text/css" href="https://codemirror.net/theme/twilight.css"/>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+<script src="http://platform.twitter.com/widgets.js"></script>
+
     <style>
 .list li {
   float:left;
@@ -49,6 +52,25 @@ h1,h2,h3 {
   margin:0px;
   padding:0px;
 }
+.shadow {
+    text-shadow:
+  1px 1px 0 #CCC,
+  2px 2px 0 yellow,
+  3px 3px 0 blue,
+  4px 4px 0 red,
+  5px 5px 0 green,
+  6px 6px 0 #444; /* end of 4 level deep dark shadow */
+}
+.lead {
+  font-size:10px;
+}
+.block {
+  display:block;
+}
+.no-padding {
+  padding:0px;
+}
+
 </style>
 
 
@@ -80,20 +102,23 @@ h1,h2,h3 {
 
     <div class="container">
     <div class="col-md-12 text-center">
-    <h1>Color Bars <h1><small>Create color bar html from images</small></h1></h1>
+    <h1 class="shadow">Color Bars <h1><small>Create html color bars from images</small></h1></h1>
     </div>
     <div class="col-md-12" ng-view=""></div>
     </div>
 
     <div class="footer">
       <div class="container">
-      <div class="col-md-3">
-        <p>
-        <span class="glyphicon glyphicon-heart"></span> Milos Bejda
-             </p>
+
+<div class="col-md-3 no-padding pull-left">
+<a twitter data-lang="en" data-count='horizontal' data-url='http://mbejda.github.io/colorbar' data-via='notmilobejda' data-size="medium" data-text='Create html color bars from images' ></a>
 </div>
-<div class="col-md-2 pull-right">
-<a href="https://twitter.com/notmilobejda"> @notmilobejda </a>
+
+
+<div class="col-md-3 pull-right no-padding">
+        <small class="block"><span class="glyphicon glyphicon-heart"></span> Milos Bejda</small>
+
+<a href="https://twitter.com/notmilobejda"><i class="fa fa-twitter"></i>  @notmilobejda </a>
    </div>
       </div>
     </div>
@@ -128,14 +153,15 @@ h1,h2,h3 {
     <script src="bower_components/codemirror/lib/codemirror.js"></script>
     <script src="bower_components/angular-ui-codemirror/ui-codemirror.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-socialshare/angular-socialshare.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    <script src="http://codemirror.net/lib/codemirror.js"></script>
-    <script src="http://codemirror.net/2/lib/util/formatting.js"></script>
-    <script src="http://codemirror.net/mode/css/css.js"></script>
-    <script src="http://codemirror.net/mode/javascript/javascript.js"></script>
-    <script src="http://codemirror.net/mode/xml/xml.js"></script>
-    <script src="http://codemirror.net/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="https://codemirror.net/lib/codemirror.js"></script>
+    <script src="https://codemirror.net/2/lib/util/formatting.js"></script>
+    <script src="https://codemirror.net/mode/css/css.js"></script>
+    <script src="https://codemirror.net/mode/javascript/javascript.js"></script>
+    <script src="https://codemirror.net/mode/xml/xml.js"></script>
+    <script src="https://codemirror.net/mode/htmlmixed/htmlmixed.js"></script>
 
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
