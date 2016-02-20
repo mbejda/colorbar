@@ -1,12 +1,7 @@
-# project
+# ColorBar
+## Create HTML color bars from images.
+[mbejda.github.io/colorbar](http://mbejda.github.io/colorbar/#/)
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
 
-## Build & development
+![Color Bars](http://res.cloudinary.com/lqyghlh2f/image/upload/v1455929327/Screen_Shot_2016-02-19_at_7.37.55_PM_kx49df.png)
 
-Run `grunt` for building and `grunt serve` for preview.
-
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
